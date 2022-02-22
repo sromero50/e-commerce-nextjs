@@ -4,3 +4,8 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: ['images.samsung.com', 'mxmoto.vtexassets.com', 'store.storeimages.cdn-apple.com'],
+  },
+}
