@@ -7,11 +7,11 @@ import { Carousel  } from 'react-responsive-carousel';
 
 const Test = () => {
   const images = [image1, image2, image3]
-  return (<Carousel infiniteLoop={true} showThumbs={false}>
+  return (<Carousel infiniteLoop={true} showThumbs={false} >
     {images.map((image, i) => {
       return (
         <div key={i}>
-          <Image src={image} width={1600} height={400} />
+          <Image src={image} width={1600} height={360} />
         </div>
       )
     })}

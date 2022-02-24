@@ -1,17 +1,33 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 border-b-2 bg-orange-400 border-orange-700 ">
-    <div className="container mx-auto ">
-        <div className="border-t-2 border-orange-800 flex flex-col items-center  w-auto">
-            <div className="sm:w-2/3 text-center py-6">
-                <p className="text-sm text-black-700 font-bold mb-2">
-                    © 2022 Copyright
-                </p>
-            </div>
-        </div>
-    </div>
+    <footer className="px-4 py-2 bg-blue-800 text-white">
+	<div className="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+		<div className="flex flex-row pr-3 space-x-4 sm:space-x-8">
+			<ul className="flex flex-wrap items-center space-x-4 sm:space-x-8">
+				<li>
+					<a href="#">Terms of Use</a>
+				</li>
+				<li>
+					<a href="#">Privacy</a>
+				</li>
+			</ul>
+		</div>
+		<ul className="flex flex-wrap pl-3 space-x-4 sm:space-x-8 text-2xl">
+			<li>
+				<a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+			</li>
+			<li>
+				<a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
+			</li>
+			<li>
+				<a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+			</li>
+		</ul>
+	</div>
 </footer>
   )
 }
